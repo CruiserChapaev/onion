@@ -1,0 +1,12 @@
+# Blender 3.4.0 MTL File: 'milkyWay.blend'
+# www.blender.org
+
+newmt1 Материал
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd 8k_stars_milky_way.jpg
+map_d 8k_stars_milky_way.jpg
