@@ -14,7 +14,7 @@
 #include <windef.h>
 
 #define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+#include "STB/stb_image.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
@@ -81,14 +81,14 @@ int main()
     glEnable(GL_DEPTH_TEST);
 
     // Компилирование нашей шейдерной программы
-    Shader lightSourceShader("shaders/modelSource.vs", "shaders/modelSource.fs");
-    Shader planetShader("shaders/1.model_loading.vs", "shaders/1.model_loading.fs");
+    Shader lightSourceShader("../onion/shaders/modelSource.vs", "../onion/shaders/modelSource.fs");
+    Shader planetShader("../onion/shaders/1.model_loading.vs", "../onion/shaders/1.model_loading.fs");
 
     // Загрузка моделей
-    Model solarSystem_mars("models/mars.obj");
+    Model solarSystem_mars("../onion/models/mars.obj");
 //    Model solarSystem_mars("textures/backpack/backpack.obj");
-    Model solarSystem_star("models/sun.obj");
-    Model solarSystem_milkyWay("models/milkyWay.obj");
+    Model solarSystem_star("../onion/models/sun.obj");
+    Model solarSystem_milkyWay("../onion/models/milkyWay.obj");
 
 
     // Отрисовка в режиме каркаса
